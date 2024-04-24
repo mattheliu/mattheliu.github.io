@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="//cdn.staticfile.net/Primer/21.0.7/primer.css" rel="stylesheet" />
+    <link rel="icon" href="https://github.githubassets.com/favicons/favicon.svg"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content="第一期书生浦语大模型实战营-书生·浦语大模型全链路开源体系​">
+<title>第一期书生浦语大模型实战营-书生·浦语大模型全链路开源体系​</title>
+
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+</style>
+
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">第一期书生浦语大模型实战营-书生·浦语大模型全链路开源体系​</h1>
+<div class="title-right">
+    <a href="https://mattheliu.github.io" id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+    <a href="https://github.com/mattheliu/mattheliu.github.io/issues/1" target="_blank" class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><p><a target="_blank" rel="noopener noreferrer" href="https://github.com/mattheliu/gitblog/assets/102272920/dc64b5dd-6607-416b-8ad7-7a89ccd10bd2"><img src="https://github.com/mattheliu/gitblog/assets/102272920/dc64b5dd-6607-416b-8ad7-7a89ccd10bd2" alt="Pasted image 20240104121846" style="max-width: 100%;"></a></p>
+<h3>介绍</h3>
+<ul>
+<li>书生·浦语大模型实战营旨在提供大模型开发和应用技能的学习，帮助学员掌握相关技能，从而获得丰富经验。</li>
+<li>大模型在学术界和工业界都备受关注，尤其是自ChatGPT发布后，成为研究的热门方向。</li>
+<li>公司如OpenAI也投入了持续的研究力量，从GPT1到GPT3，甚至发布ChatGPT后，受到广泛关注。<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/mattheliu/gitblog/assets/102272920/23663dad-6338-41ba-ab02-d9110db10c96"><img src="https://github.com/mattheliu/gitblog/assets/102272920/23663dad-6338-41ba-ab02-d9110db10c96" alt="Pasted image 20240104122116" style="max-width: 100%;"></a></li>
+</ul>
+<h3>大模型的重要性</h3>
+<ul>
+<li>大模型是发展通用人工智能的重要途径，AI研究逐渐从专用模型转向通用模型。</li>
+<li>在过去的几十年里，专用模型解决特定任务，但近年来趋势是采用一个模型解决多种任务和模态。</li>
+<li>模型如ChatGPT涵盖多种任务，从文本到情感识别、QA等，甚至模态从语言扩展到视觉，提高了模型的通用性。<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/mattheliu/gitblog/assets/102272920/1c818aad-0174-4689-9445-d47cd5734200"><img src="https://github.com/mattheliu/gitblog/assets/102272920/1c818aad-0174-4689-9445-d47cd5734200" alt="Pasted image 20240104122053" style="max-width: 100%;"></a></li>
+</ul>
+<h3>上海人工智能实验室的工作</h3>
+<ul>
+<li>上海人工程实验室致力于大语言模型的研究和开源工作。</li>
+<li>发布了InternLM的千亿参数预训练模型，并在世界人工智能大会上对其进行升级。</li>
+<li>同时推出了InternLM-7B的全面开源、免费商用的大模型，并升级了工具链，提供不同大小的模型系列。<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/mattheliu/gitblog/assets/102272920/0b59d644-6fb3-4d3c-bbb8-732dba2909ed"><img src="https://github.com/mattheliu/gitblog/assets/102272920/0b59d644-6fb3-4d3c-bbb8-732dba2909ed" alt="Pasted image 20240104122134" style="max-width: 100%;"></a></li>
+</ul>
+<h3>模型性能和应用</h3>
+<ul>
+<li>InternLM-20B模型在综合学科考试、阅读理解、推理编程等方面表现出色，性能优异。</li>
+<li>但将大模型应用于实际场景并不简单，需要一系列工作和工具的辅助。</li>
+<li>典型应用包括智能客服、个人助手以及一些行业应用，但需填补模型和最终应用之间的差距。<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/mattheliu/gitblog/assets/102272920/727c4f08-0731-4b16-8ee0-8e69683fe926"><img src="https://github.com/mattheliu/gitblog/assets/102272920/727c4f08-0731-4b16-8ee0-8e69683fe926" alt="Pasted image 20240104123044" style="max-width: 100%;"></a></li>
+</ul>
+<h3>模型应用的步骤</h3>
+<ol>
+<li><strong>模型选型</strong>：根据模型的能力和业务场景需求进行评估和选择。</li>
+<li><strong>业务场景评估</strong>：评估业务场景复杂度，可能需要模型微调或构建智能体。</li>
+<li><strong>模型微调</strong>：根据需求微调模型，可能需要全参数微调或部分参数微调。</li>
+<li><strong>业务应用试用</strong>：模型在业务场景中试用，并进行评测。</li>
+<li><strong>模型部署</strong>：解决模型部署的问题，提升应用吞吐量。<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/mattheliu/gitblog/assets/102272920/fe41d9e3-bb07-4e32-add9-548e66152196"><img src="https://github.com/mattheliu/gitblog/assets/102272920/fe41d9e3-bb07-4e32-add9-548e66152196" alt="Pasted image 20240104123013" style="max-width: 100%;"></a></li>
+</ol>
+<h3>书生·浦语全链条开源体系</h3>
+<ul>
+<li>该体系包括从数据、预训练、微调到部署、评测和应用等完整的大模型应用环节。</li>
+<li>开源了包括多模态语料库、预训练框架、微调框架等工具，支持模型的开发和应用。<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/mattheliu/gitblog/assets/102272920/6e5df0f1-b747-47b0-99d5-6868131bbc97"><img src="https://github.com/mattheliu/gitblog/assets/102272920/6e5df0f1-b747-47b0-99d5-6868131bbc97" alt="Pasted image 20240104123116" style="max-width: 100%;"></a></li>
+</ul>
+<h3>模型部署与评测工具</h3>
+<ul>
+<li><strong>LMDeploy：</strong> 开源的部署工具，支持全链路部署流程，在性能方面领先。</li>
+<li><strong>OpenCompass：</strong> 开源评测工具，为大模型研发提供全方位的评测能力，提供公开的性能排行榜。</li>
+<li><strong>应用层开源项目：</strong>
+<ul>
+<li><strong>Legend &amp; Agent Lego：</strong> 提供轻量级智能体搭建框架和丰富的大模型工具箱。</li>
+</ul>
+</li>
+<li><strong>书生·浦语开放体系：</strong>
+<ul>
+<li><strong>书生·万卷：</strong> 多模态语料库，跨不同领域，提升模型的知识逻辑和推理能力。</li>
+<li><strong>Open Data Lab：</strong> 开放数据平台，超过5400个数据集，涵盖多种模态、总计80TB的数据。<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/mattheliu/gitblog/assets/102272920/bf7894c5-18ed-4f66-8fb3-f1dcd0fccb3b"><img src="https://github.com/mattheliu/gitblog/assets/102272920/bf7894c5-18ed-4f66-8fb3-f1dcd0fccb3b" alt="Pasted image 20240104133009" style="max-width: 100%;"></a></li>
+</ul>
+</li>
+</ul>
+<h3>数据集和预训练工具</h3>
+<ul>
+<li><strong>数据集和工具：</strong> 提供开放数据平台，支持浏览、下载和智能标注。</li>
+<li><strong>InterLM-Train：</strong> 高可拓展的预训练工具，支持不同规格的语言模型训练，具备极致性能优化和兼容性。</li>
+<li><strong>微调框架 X Tuner：</strong> 适配多种生态，包括微调算法和硬件兼容性，实现在8GB显存下进行7B模型的微调。<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/mattheliu/gitblog/assets/102272920/ddcd2e3b-0f1d-417c-9384-3c8439a0e0c8"><img src="https://github.com/mattheliu/gitblog/assets/102272920/ddcd2e3b-0f1d-417c-9384-3c8439a0e0c8" alt="Pasted image 20240104133351" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/mattheliu/gitblog/assets/102272920/c2e599d7-d37e-4439-afb7-dbe30fe3285b"><img src="https://github.com/mattheliu/gitblog/assets/102272920/c2e599d7-d37e-4439-afb7-dbe30fe3285b" alt="Pasted image 20240104133408" style="max-width: 100%;"></a></li>
+</ul>
+<h3>大规模语言模型评测体系</h3>
+<ul>
+<li><strong>评测体系概述：</strong> 介绍国内外评测体系的现状，提出了 Open Compass 开源评测体系，提供全面评测维度和工具支持。</li>
+<li><strong>现有评测体系不足：</strong> 目前的评测体系无法全面满足大规模语言模型的发展需求。</li>
+<li><strong>OpenCompass 特点：</strong> 全球领先的开源评测体系，六大维度，80+数据集，40万+评测题目。<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/mattheliu/gitblog/assets/102272920/d8c7e3cd-8e5a-410f-9594-45b3e087340b"><img src="https://github.com/mattheliu/gitblog/assets/102272920/d8c7e3cd-8e5a-410f-9594-45b3e087340b" alt="Pasted image 20240104133428" style="max-width: 100%;"></a></li>
+</ul>
+<h3>不同评测体系对比</h3>
+<ul>
+<li><strong>各评测体系对比：</strong> 分析主观和客观评测集的特点，如HELM、MMLU、FlagEval、CLUE、Hugging Face等。</li>
+<li><strong>OpenCompass的全面性：</strong> 提供丰富的模型支持、不同能力的评测方法和工具，支持多种数据集和算法优化。<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/mattheliu/gitblog/assets/102272920/f19230ec-d10f-48c5-a2cd-e478567fe254"><img src="https://github.com/mattheliu/gitblog/assets/102272920/f19230ec-d10f-48c5-a2cd-e478567fe254" alt="Pasted image 20240104133638" style="max-width: 100%;"></a></li>
+</ul>
+<h3>模型评测与分布式支持</h3>
+<ul>
+<li>OpenCompass提供了全方位模型评测支持，包括各种商用API和大型模型的评估。</li>
+<li>分布式评测能力使其能够对参数规模庞大的模型进行多数据集、大规模评测。</li>
+<li>支持用户快速添加自定义数据集，方便针对特定模型能力或评测研究的需求。</li>
+<li>每周更新大型模型的能力榜单，吸引了国内外企业和科研机构使用。<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/mattheliu/gitblog/assets/102272920/e6ed9ddb-b31a-4044-a7cf-d095551bee31"><img src="https://github.com/mattheliu/gitblog/assets/102272920/e6ed9ddb-b31a-4044-a7cf-d095551bee31" alt="Pasted image 20240104133540" style="max-width: 100%;"></a></li>
+</ul>
+<h3>模型部署优化</h3>
+<ul>
+<li>大型语言模型的特点包括巨大的内存开销和自回归方式，带来推理挑战。</li>
+<li>为了解决部署挑战，需要考虑内存管理、加速token生成、动态shape等问题。</li>
+<li>LMDeploy是一个高效的推理框架，提供全流程解决方案，包括模型轻量化和服务模块。</li>
+<li>提供静态和动态推理性能的评估，展示LMDeploy在吞吐和实时场景中的优势。<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/mattheliu/gitblog/assets/102272920/5ff59a7c-da5c-4e99-98f8-eca3c772d31f"><img src="https://github.com/mattheliu/gitblog/assets/102272920/5ff59a7c-da5c-4e99-98f8-eca3c772d31f" alt="Pasted image 20240104133638" style="max-width: 100%;"></a></li>
+</ul>
+<h3>智能体应用与智能体框架</h3>
+<ul>
+<li>大型语言模型具有局限性，智能体框架用于利用这些模型驱动更复杂应用。</li>
+<li>智能体框架涉及规划、推理和执行等步骤，支持不同类型的智能体能力和调用流程。</li>
+<li>Legent是一个轻量级智能体框架，支持定制化的智能体流程实现。</li>
+<li>AgentLego聚焦于为大型模型提供工具集，作为可调用的工具集合。<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/mattheliu/gitblog/assets/102272920/44e1b717-af5f-4f8a-8130-93d0f62799fc"><img src="https://github.com/mattheliu/gitblog/assets/102272920/44e1b717-af5f-4f8a-8130-93d0f62799fc" alt="Pasted image 20240104133838" style="max-width: 100%;"></a></li>
+</ul>
+<h3>工具链和兼容性</h3>
+<ul>
+<li>AgentLego提供了丰富的工具链，包括视觉工具、模型对等，支持多个主流智能体系统。</li>
+<li>支持不同类型大型模型的兼容性和多模态工具调用接口。<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/mattheliu/gitblog/assets/102272920/2b0213ce-2ca4-44ca-b511-a6d3bff39d0c"><img src="https://github.com/mattheliu/gitblog/assets/102272920/2b0213ce-2ca4-44ca-b511-a6d3bff39d0c" alt="Pasted image 20240104133856" style="max-width: 100%;"></a></li>
+</ul>
+<h3>总结</h3>
+<ul>
+<li>课程总结了书生普语全链条开源体系，包括数据到应用的完整流程设计。</li>
+<li>提供二维码链接至相应的GitHub页面，便于查看相关开源工具。<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/mattheliu/gitblog/assets/102272920/57c6a63a-b5ab-4a68-82a5-6132b04145f3"><img src="https://github.com/mattheliu/gitblog/assets/102272920/57c6a63a-b5ab-4a68-82a5-6132b04145f3" alt="Pasted image 20240104133918" style="max-width: 100%;"></a></li>
+</ul></div>
+<div style="font-size:small;margin-top:8px;float:right;"></div>
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
+</div>
+    <div id="footer">Copyright © <span id="year"></span><a href="https://mattheliu.github.io"> Blog Title </a>
+<p>
+<span id="runday"></span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a>
+</p>
+
+<script>
+if(""!=""){
+    var now=new Date();
+    var startSite=new Date("");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("year").innerHTML=now.getFullYear();
+    if(""!=""){document.getElementById("runday").innerHTML=" • "+"网站运行"+diffDay+"天"+" • ";}
+    else{document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";}
+}
+</script>
+</div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n\n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","mattheliu/mattheliu.github.io");
+    script.setAttribute("issue-term","title");
+    
+    if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}
+    else if(localStorage.getItem("meek_theme")=="light") {script.setAttribute("theme","github-light");}
+    else{script.setAttribute("theme","preferred-color-scheme");}
+    
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
+}
+
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
+</script>
+
+
+
+</html>
