@@ -759,3 +759,4 @@ download(model_repo='OpenLMLab/InternLM-7b', model_name='InternLM-7b', output='y
 - 工具调用类项目：结合 Lagent 构建数据集训练 InternLM 模型，支持对 MMYOLO 等工具的调用
 
 其他基于书生·浦语工具链的小项目都在范围内，欢迎大家充分发挥想象力。
+<!-- ##{"timestamp":1708845197}## -->
