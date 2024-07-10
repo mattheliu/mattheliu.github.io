@@ -163,7 +163,7 @@ xtuner copy-cfg internlm_chat_7b_qlora_oasst1_e3 <span class="pl-c1">.</span></p
 <blockquote>
 <p>xtuner copy-cfg internlm_chat_7b_qlora_oasst1_e3 .</p>
 </blockquote>
-<table role="table">
+<markdown-accessiblity-table><table role="table">
 <thead>
 <tr>
 <th>模型名</th>
@@ -184,7 +184,7 @@ xtuner copy-cfg internlm_chat_7b_qlora_oasst1_e3 <span class="pl-c1">.</span></p
 <td>跑3次：e3 (epoch 3 )</td>
 </tr>
 </tbody>
-</table>
+</table></markdown-accessiblity-table>
 <p>*无 chat比如 <code class="notranslate">internlm-7b</code> 代表是基座(base)模型</p>
 <h4>2.3.2 模型下载</h4>
 <blockquote>
@@ -255,7 +255,7 @@ vim internlm_chat_7b_qlora_oasst1_e3_copy.py</pre></div>
 <span class="pl-md"><span class="pl-md">-</span> data_path = 'timdettmers/openassistant-guanaco'</span>
 <span class="pl-mi1"><span class="pl-mi1">+</span> data_path = './openassistant-guanaco'</span></pre></div>
 <p><strong>常用超参</strong></p>
-<table role="table">
+<markdown-accessiblity-table><table role="table">
 <thead>
 <tr>
 <th>参数名</th>
@@ -292,7 +292,7 @@ vim internlm_chat_7b_qlora_oasst1_e3_copy.py</pre></div>
 <td>......</td>
 </tr>
 </tbody>
-</table>
+</table></markdown-accessiblity-table>
 <blockquote>
 <p>如果想把显卡的现存吃满，充分利用显卡资源，可以将 <code class="notranslate">max_length</code> 和 <code class="notranslate">batch_size</code> 这两个参数调大。</p>
 </blockquote>
@@ -392,7 +392,7 @@ xtuner chat ./merged --prompt-template internlm_chat
 </ul>
 <div class="highlight highlight-source-shell"><pre class="notranslate">python ./cli_demo.py</pre></div>
 <p><strong>效果：</strong></p>
-<table role="table">
+<markdown-accessiblity-table><table role="table">
 <thead>
 <tr>
 <th>微调前</th>
@@ -405,9 +405,9 @@ xtuner chat ./merged --prompt-template internlm_chat
 <td><a target="_blank" rel="noopener noreferrer" href="imgs/afterFT.png"><img src="imgs/afterFT.png" alt="L1sqmGgE6h2exWP.png" style="max-width: 100%;"></a></td>
 </tr>
 </tbody>
-</table>
+</table></markdown-accessiblity-table>
 <p><strong><code class="notranslate">xtuner chat</code></strong> <strong>的启动参数</strong></p>
-<table role="table">
+<markdown-accessiblity-table><table role="table">
 <thead>
 <tr>
 <th>启动参数</th>
@@ -480,7 +480,7 @@ xtuner chat ./merged --prompt-template internlm_chat
 <td>用于可重现文本生成的随机种子</td>
 </tr>
 </tbody>
-</table>
+</table></markdown-accessiblity-table>
 <h2>3 自定义微调</h2>
 <blockquote>
 <p>以 <strong><a href="https://github.com/abachaa/Medication_QA_MedInfo2019">Medication QA</a></strong> <strong>数据集</strong>为例</p>
@@ -489,7 +489,7 @@ xtuner chat ./merged --prompt-template internlm_chat
 <h4>3.1.1 <strong>场景需求</strong></h4>
 <p>基于 InternLM-chat-7B 模型，用 MedQA 数据集进行微调，将其往<code class="notranslate">医学问答</code>领域对齐。</p>
 <h4>3.1.2 <strong>真实数据预览</strong></h4>
-<table role="table">
+<markdown-accessiblity-table><table role="table">
 <thead>
 <tr>
 <th>问题</th>
@@ -506,14 +506,14 @@ xtuner chat ./merged --prompt-template internlm_chat
 <td>Some   medicines for conditions other than diabetes can raise your blood sugar   level. This is a concern when you have diabetes. Make sure every doctor you   see knows about all of the medicines, vitamins, or herbal supplements you   take. This means anything you take with or without a prescription. Examples include:     Barbiturates.     Thiazide diuretics.     Corticosteroids.     Birth control pills (oral contraceptives) and progesterone.     Catecholamines.     Decongestants that contain beta-adrenergic agents, such as pseudoephedrine.     The B vitamin niacin. The risk of high blood sugar from niacin lowers after you have taken it for a few months. The antipsychotic medicine olanzapine (Zyprexa).</td>
 </tr>
 </tbody>
-</table>
+</table></markdown-accessiblity-table>
 <h3>3.2 数据准备</h3>
 <blockquote>
 <p><strong>以</strong> <strong><a href="https://github.com/abachaa/Medication_QA_MedInfo2019">Medication QA</a></strong> <strong>数据集为例</strong></p>
 </blockquote>
 <p><strong>原格式：(.xlsx)</strong></p>
 <p><a target="_blank" rel="noopener noreferrer" href="imgs/medqa2019samples.png"><img src="imgs/medqa2019samples.png" alt="gjKLFUNWAx2dZDS.png" style="max-width: 100%;"></a></p>
-<table role="table">
+<markdown-accessiblity-table><table role="table">
 <thead>
 <tr>
 <th><strong>问题</strong></th>
@@ -534,7 +534,7 @@ xtuner chat ./merged --prompt-template internlm_chat
 <td>fff</td>
 </tr>
 </tbody>
-</table>
+</table></markdown-accessiblity-table>
 <h4>3.2.1 将数据转为 XTuner 的数据格式</h4>
 <p><strong>目标格式：(.jsonL)</strong></p>
 <div class="highlight highlight-source-json"><pre class="notranslate">[{

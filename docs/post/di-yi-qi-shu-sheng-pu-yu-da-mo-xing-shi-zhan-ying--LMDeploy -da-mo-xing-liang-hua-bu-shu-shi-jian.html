@@ -571,7 +571,7 @@ lmdeploy lite kv_qparams \
 <p>接下来就可以正常运行前面的各种服务了，只不过咱们现在可是用上了 KV Cache 量化，能更省（运行时）显存了。</p>
 <h4>3.1.2 量化效果</h4>
 <p>官方给出了 <a href="https://huggingface.co/internlm/internlm-chat-7b" rel="nofollow">internlm-chat-7b</a> 模型在 KV Cache 量化前后的显存对比情况，如下表所示。</p>
-<table role="table">
+<markdown-accessiblity-table><table role="table">
 <thead>
 <tr>
 <th>batch_size</th>
@@ -606,10 +606,10 @@ lmdeploy lite kv_qparams \
 <td>-24672</td>
 </tr>
 </tbody>
-</table>
+</table></markdown-accessiblity-table>
 <p>可以看出，KV Cache 可以节约大约 20% 的显存。</p>
 <p>同时，还在 <a href="https://github.com/open-compass/opencompass">opencompass</a> 平台上测试了量化前后的精准度（Accuracy）对比情况，如下表所示。</p>
-<table role="table">
+<markdown-accessiblity-table><table role="table">
 <thead>
 <tr>
 <th>task</th>
@@ -678,7 +678,7 @@ lmdeploy lite kv_qparams \
 <td>+1.13</td>
 </tr>
 </tbody>
-</table>
+</table></markdown-accessiblity-table>
 <p>可以看出，精度不仅没有明显下降，相反在不少任务上还有一定的提升。可能得原因是，量化会导致一定的误差，有时候这种误差可能会减少模型对训练数据的拟合，从而提高泛化性能。量化可以被视为引入轻微噪声的正则化方法。或者，也有可能量化后的模型正好对某些数据集具有更好的性能。</p>
 <p>总结一下，KV Cache 量化既能明显降低显存占用，还有可能同时带来精准度（Accuracy）的提升。</p>
 <h3>3.2 W4A16 量化</h3>
@@ -712,7 +712,7 @@ lmdeploy convert  internlm-chat-7b ./quant_output \
 <p>最后再补充一点，量化模型和 KV Cache 量化也可以一起使用，以达到最大限度节省显存。</p>
 <h4>3.2.2 量化效果</h4>
 <p>官方在 NVIDIA GeForce RTX 4090 上测试了 4-bit 的 Llama-2-7B-chat 和 Llama-2-13B-chat 模型的 token 生成速度。测试配置为 BatchSize = 1，prompt_tokens=1，completion_tokens=512，结果如下表所示。</p>
-<table role="table">
+<markdown-accessiblity-table><table role="table">
 <thead>
 <tr>
 <th>model</th>
@@ -735,10 +735,10 @@ lmdeploy convert  internlm-chat-7b ./quant_output \
 <td>115.8</td>
 </tr>
 </tbody>
-</table>
+</table></markdown-accessiblity-table>
 <p>可以看出，TurboMind 相比其他框架速度优势非常显著，比 mlc-llm 快了将近 30%。</p>
 <p>另外，也测试了 TurboMind 在不同精度和上下文长度下的显存占用情况，如下表所示。</p>
-<table role="table">
+<markdown-accessiblity-table><table role="table">
 <thead>
 <tr>
 <th>model(context length)</th>
@@ -764,7 +764,7 @@ lmdeploy convert  internlm-chat-7b ./quant_output \
 <td>12.0</td>
 </tr>
 </tbody>
-</table>
+</table></markdown-accessiblity-table>
 <p>可以看出，4bit 模型可以降低 50-60% 的显存占用，效果非常明显。</p>
 <p>总而言之，W4A16 参数量化后能极大地降低显存，同时相比其他框架推理速度具有明显优势。</p>
 <h3>3.3 最佳实践</h3>
